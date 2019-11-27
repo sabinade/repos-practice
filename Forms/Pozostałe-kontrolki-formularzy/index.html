@@ -15,12 +15,14 @@
 
     <main>
         <article>
-            <form action="order.php" method="POST">
+            <form action="order.php" method="POST" enctype="multipart/form-data">
                     <label>E-mail: <input type="email" name="adres"></label>
                     <label>Telefon: <input type="tel" name="telefon"></label>
                     <label>Data: <input type="date" name="data" min="2019-12-01" max="2020-01-30"></label>
                     <label>Czas: <input type="time" name="czas" step="1" min="09:00" max="18:00"></label>
-
+                    <label for="komentarz">Uwagi: </label>
+                    <textarea name="komentarz" id="komentarz" cols="50" rows="5"></textarea>
+                    <label>Prześlij zdjęcia <input type="file" name="obraz" accept="image/x-png, image/gif, image/jpeg" multiple> </label>
                 
                 <div class="row">
                     <input type="submit" value="Przesyłaj">
