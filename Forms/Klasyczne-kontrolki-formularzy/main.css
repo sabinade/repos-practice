@@ -13,3 +13,7 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.row {
+    margin: 20px 10px;
+}
