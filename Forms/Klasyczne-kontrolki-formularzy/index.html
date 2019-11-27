@@ -13,7 +13,7 @@
     </header>
     <main>
         <article>
-            <form action="" method="POST">
+            <form action="order.php" method="POST">
 
                 <div class="row">
                     <fieldset>
@@ -59,6 +59,10 @@
                 </div>
 
                 <div class="row">
+                    <label>Ile razy w tygodniu: <input type="number" name="ile-razy" step="0.5" min="1" max="5"></label>
+                </div>
+
+                <div class="row">
                     <label for="forma">Forma:</label>
                         <div class="row2">
                             <select id="forma" name="forma[]" multiple size="3">
@@ -67,6 +71,18 @@
                                 <option value="o">konto online</option>
                             </select>
                         </div>
+                </div>
+
+                <div class="row">
+                    <label>Imię: <input type="text" name="imie" placeholder="Janina"></label>
+                    <label>Hasło: <input type="password" name="haslo"></label>
+                    <label>Szukaj: <input type="search" name="fraza"></label>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Prześlij">
+                    <input type="button" value="Nie-ślij">
+                    <button>Wyślij</button>
                 </div>
             </form>
         </article>
