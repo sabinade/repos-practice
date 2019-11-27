@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0 60px;
+    background-color: darkolivegreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
+};
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    margin-top: 25px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+}
