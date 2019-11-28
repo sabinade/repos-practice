@@ -16,19 +16,26 @@
     <main>
         <article>
             <form action="order.php" method="POST" enctype="multipart/form-data">
-                    <label>E-mail: <input type="email" name="adres"></label>
-                    <label>Telefon: <input type="tel" name="telefon"></label>
+                    <label>E-mail: <input type="email" name="adres" required></label>
+                    <label>Telefon: <input type="tel" name="telefon" required></label>
                     <label>Data: <input type="date" name="data" min="2019-12-01" max="2020-01-30"></label>
-                    <label>Czas: <input type="time" name="czas" step="1" min="09:00" max="18:00"></label>
+                    <label>Czas: <input type="time" name="czas" step="1" min="09:00" max="18:00" readonly value="17:00"></label>
                     <label for="komentarz">Uwagi: </label>
                     <textarea name="komentarz" id="komentarz" cols="50" rows="5"></textarea>
                     <label>Prześlij zdjęcia: <input type="file" name="obraz" accept="image/x-png, image/gif, image/jpeg" multiple> </label>
                     <label>Stopień realizacji: <progress id="realizacja" value="50" max="100"></progress></label>
-                    <label>Stopień naładowania: <meter min="0" max="100" value="35" type="procent"></meter></label>
+                    <label>Stopień naładowania: <meter min="0" max="100" value="90" low="30" high="95" optimum="80" type="procent"></meter></label>
                     <label>Kolor: <input type="color" name="kolor" value="#fff"></label>
+                    <label>Twoja strona internetowa: <input type="url" name="witryna" placeholder="http://" > </label>
+                    <input type="hidden" name="token" value="1208394eu93hify">
+
                 
                 <div class="row">
                     <input type="submit" value="Przesyłaj">
+                </div>
+
+                <div class="ro">
+                    <input type="reset" value="Czyść formularz">
                 </div>
             </form>
         </article> 
