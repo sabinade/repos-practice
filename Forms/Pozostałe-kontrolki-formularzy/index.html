@@ -22,7 +22,10 @@
                     <label>Czas: <input type="time" name="czas" step="1" min="09:00" max="18:00"></label>
                     <label for="komentarz">Uwagi: </label>
                     <textarea name="komentarz" id="komentarz" cols="50" rows="5"></textarea>
-                    <label>Prześlij zdjęcia <input type="file" name="obraz" accept="image/x-png, image/gif, image/jpeg" multiple> </label>
+                    <label>Prześlij zdjęcia: <input type="file" name="obraz" accept="image/x-png, image/gif, image/jpeg" multiple> </label>
+                    <label>Stopień realizacji: <progress id="realizacja" value="50" max="100"></progress></label>
+                    <label>Stopień naładowania: <meter min="0" max="100" value="35" type="procent"></meter></label>
+                    <label>Kolor: <input type="color" name="kolor" value="#fff"></label>
                 
                 <div class="row">
                     <input type="submit" value="Przesyłaj">
